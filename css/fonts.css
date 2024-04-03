@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'bebas';
+    src: url("../assets/fonts/bebas-regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'ubuntu';
+    src: url("../assets/fonts/ubuntu-regular.woff2") format('wodd2'), url("../assets/fonts/ubuntu-regular.woff") format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
