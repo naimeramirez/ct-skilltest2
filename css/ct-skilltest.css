@@ -122,11 +122,11 @@ ul {
     display: flex;
 }
 
-.content-item {
+.content-tabs li {
     padding-right: 5px;
 }
 
-.active {
+.content-item.active-tab {
     color: var(--secondary);
 }
 
@@ -135,8 +135,20 @@ ul {
     font-size: 36px;
 }
 
-.tab-content {
-    /*display: none;*/
+.content-info p {
+    padding: 5px 0;
+}
+
+.content-info {
+    padding: 50px 0;
+}
+
+.tab-pane {
+    display: none;
+}
+
+.tab-pane.active{
+    display: block;
 }
 
 /*contact form*/

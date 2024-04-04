@@ -72,36 +72,50 @@
 
 <div class="content">
     <ul class="content-tabs" id="bodyTabs" role="tablist">
-        <li class="content-item" role="presentation">
-            <a href="#">Home / </a>
+        <li class="content-item" role="presentation" onclick="activateTab(this)" data-tab-id="home">
+            <a href="#">Home</a>
         </li>
-        <li class="content-item" role="presentation">
-            <a href="#">Who we are /</a>
+        <li>/ </li>
+        <li class="content-item" role="presentation" onclick="activateTab(this)" data-tab-id="whoWeAre">
+            <a href="#">Who we are</a>
         </li>
-        <li class="content-item active" role="presentation">
+        <li>/ </li>
+        <li class="content-item active-tab" role="presentation" onclick="activateTab(this)" data-tab-id="contact">
             <a href="#">Contact</a>
         </li>
     </ul>
 
     <div class="tab-content">
 
-        <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home">
-            <p class="content-title">Home</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et iste
-                labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet fugit
-                quisquam repellat saepe?</p>
+        <div class="tab-pane" id="home" role="tabpanel" aria-labelledby="home">
+            <div class="content-info">
+                <p class="content-title">Home</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et
+                    iste
+                    labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet
+                    fugit
+                    quisquam repellat saepe?</p>
+            </div>
         </div>
-        <div class="tab-pane active" id="whoWeAre" role="tabpanel" aria-labelledby="home">
-            <p class="content-title">Who we are</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et iste
-                labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet fugit
-                quisquam repellat saepe?</p>
+        <div class="tab-pane" id="whoWeAre" role="tabpanel" aria-labelledby="whoWeAre">
+            <div class="content-info">
+                <p class="content-title">Who we are</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et
+                    iste
+                    labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet
+                    fugit
+                    quisquam repellat saepe?</p>
+            </div>
         </div>
-        <div class="tab-pane active" id="contact" role="tabpanel" aria-labelledby="home">
-            <p class="content-title">Contact</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et iste
-                labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet fugit
-                quisquam repellat saepe?</p>
+        <div class="tab-pane active" id="contact" role="tabpanel" aria-labelledby="contact">
+            <div class="content-info">
+                <p class="content-title">Contact</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus deleniti, dignissimos dolor, et
+                    iste
+                    labore libero magnam magni optio placeat, praesentium provident ut! Consequuntur debitis eveniet
+                    fugit
+                    quisquam repellat saepe?</p>
+            </div>
 
             <div class="contact-info">
                 <div class="contact-us">
@@ -125,16 +139,29 @@
                     <p>Fax: 385.154.35.66.78</p>
                     <ul class="social-links">
                         <li><a href="https://facebook.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200"><path fill="currentColor" d="M0 0v1200h1200V0zm863.232 156.592c8.715-.185 17.791.098 27.173.732c34.476.047 70.483 3.155 106.201 6.299l-3.882 142.09h-95.947c-44.988-.996-61.235 16.473-62.695 67.236V484.57h162.524l-6.445 152.197H834.082v423.706H675.513V636.768H565.43V484.57h110.083V353.906c0-94.209 39.829-154.174 118.286-184.57c20.149-7.928 43.288-12.189 69.433-12.744"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200">
+                                <path fill="currentColor"
+                                      d="M0 0v1200h1200V0zm863.232 156.592c8.715-.185 17.791.098 27.173.732c34.476.047 70.483 3.155 106.201 6.299l-3.882 142.09h-95.947c-44.988-.996-61.235 16.473-62.695 67.236V484.57h162.524l-6.445 152.197H834.082v423.706H675.513V636.768H565.43V484.57h110.083V353.906c0-94.209 39.829-154.174 118.286-184.57c20.149-7.928 43.288-12.189 69.433-12.744"/>
+                            </svg>
                         </a></li>
                         <li><a href="https://twiter.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16"><path fill="currentColor" d="M0 0v16h16V0zm12.8 5.6v.3c0 3.3-2.5 7-7 7c-1.4 0-2.7-.4-3.8-1.1h.6c1.2 0 2.2-.4 3.1-1.1c-1.1 0-2-.7-2.3-1.7h.5c.2 0 .4 0 .6-.1c-1.1-.2-2-1.2-2-2.4c.3.2.7.3 1.1.3c-.7-.4-1.1-1.2-1.1-2c0-.5.1-.9.3-1.2C4 5.1 5.9 6 7.9 6.1c0-.2-.1-.4-.1-.6C7.8 4.1 8.9 3 10.3 3c.7 0 1.3.3 1.8.8c.6-.1 1.1-.3 1.6-.6c-.2.6-.6 1.1-1.1 1.4c.5-.1 1-.2 1.4-.4c-.3.6-.7 1-1.2 1.4"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 16 16">
+                                <path fill="currentColor"
+                                      d="M0 0v16h16V0zm12.8 5.6v.3c0 3.3-2.5 7-7 7c-1.4 0-2.7-.4-3.8-1.1h.6c1.2 0 2.2-.4 3.1-1.1c-1.1 0-2-.7-2.3-1.7h.5c.2 0 .4 0 .6-.1c-1.1-.2-2-1.2-2-2.4c.3.2.7.3 1.1.3c-.7-.4-1.1-1.2-1.1-2c0-.5.1-.9.3-1.2C4 5.1 5.9 6 7.9 6.1c0-.2-.1-.4-.1-.6C7.8 4.1 8.9 3 10.3 3c.7 0 1.3.3 1.8.8c.6-.1 1.1-.3 1.6-.6c-.2.6-.6 1.1-1.1 1.4c.5-.1 1-.2 1.4-.4c-.3.6-.7 1-1.2 1.4"/>
+                            </svg>
                         </a></li>
                         <li><a href="https://linkedin.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200"><path fill="currentColor" d="M0 0v1200h1200V0zm294.287 235.913c47.53.535 94.35 33.325 96.387 90.088c1.016 50.475-42.971 88.921-97.632 90.088h-1.318c-47.057-.543-93.012-34.156-95.142-90.088c.671-49.913 42.627-88.904 97.705-90.088M804.199 474.39c52.255.324 101.572 15.826 142.09 57.13c42.106 46.96 55.624 111.71 57.129 177.538v299.414H830.859V729.419c-.384-52.302-18.3-115.877-87.524-117.993c-40.571.432-69.18 24.007-88.77 63.428c-5.348 12.688-6.118 27.273-6.372 41.821v291.797H475.708c.66-145.877 1.567-291.743 1.245-437.622c0-41.438-.399-69.34-1.245-83.716h172.485v73.535c14.641-20.823 30.879-40.571 52.66-56.47c29.545-21.085 65.036-29.168 103.346-29.809m-597.436 12.744h172.485v521.338H206.763z"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 1200 1200">
+                                <path fill="currentColor"
+                                      d="M0 0v1200h1200V0zm294.287 235.913c47.53.535 94.35 33.325 96.387 90.088c1.016 50.475-42.971 88.921-97.632 90.088h-1.318c-47.057-.543-93.012-34.156-95.142-90.088c.671-49.913 42.627-88.904 97.705-90.088M804.199 474.39c52.255.324 101.572 15.826 142.09 57.13c42.106 46.96 55.624 111.71 57.129 177.538v299.414H830.859V729.419c-.384-52.302-18.3-115.877-87.524-117.993c-40.571.432-69.18 24.007-88.77 63.428c-5.348 12.688-6.118 27.273-6.372 41.821v291.797H475.708c.66-145.877 1.567-291.743 1.245-437.622c0-41.438-.399-69.34-1.245-83.716h172.485v73.535c14.641-20.823 30.879-40.571 52.66-56.47c29.545-21.085 65.036-29.168 103.346-29.809m-597.436 12.744h172.485v521.338H206.763z"/>
+                            </svg>
                         </a></li>
                         <li><a href="https://pinterest.com">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24"><rect width="24" height="24" fill="currentColor"></rect><path fill="#FFFFFF" d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562c0 1.533.581 2.894 1.823 3.401c.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495c-.359-.422-.588-.972-.588-1.747c0-2.25 1.683-4.264 4.384-4.264c2.392 0 3.706 1.463 3.706 3.412c0 2.568-1.137 4.734-2.824 4.734c-.932 0-1.629-.77-1.405-1.715c.268-1.13.786-2.347.786-3.16c0-.729-.392-1.336-1.2-1.336c-.952 0-1.718.984-1.718 2.304c0 .841.286 1.409.286 1.409L8.728 16.79c-.34 1.44-.051 3.206-.025 3.385c.013.104.149.131.21.051c.088-.115 1.223-1.517 1.607-2.915c.111-.396.627-2.445.627-2.445c.311.589 1.213 1.108 2.175 1.108c2.863 0 4.804-2.608 4.804-6.103c-.003-2.64-2.24-5.1-5.64-5.1"/></svg>
+                            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" viewBox="0 0 24 24">
+                                <rect width="24" height="24" fill="currentColor"></rect>
+                                <path fill="#FFFFFF"
+                                      d="M12.486 4.771c-4.23 0-6.363 3.033-6.363 5.562c0 1.533.581 2.894 1.823 3.401c.205.084.387.004.446-.221l.182-.717c.061-.221.037-.3-.127-.495c-.359-.422-.588-.972-.588-1.747c0-2.25 1.683-4.264 4.384-4.264c2.392 0 3.706 1.463 3.706 3.412c0 2.568-1.137 4.734-2.824 4.734c-.932 0-1.629-.77-1.405-1.715c.268-1.13.786-2.347.786-3.16c0-.729-.392-1.336-1.2-1.336c-.952 0-1.718.984-1.718 2.304c0 .841.286 1.409.286 1.409L8.728 16.79c-.34 1.44-.051 3.206-.025 3.385c.013.104.149.131.21.051c.088-.115 1.223-1.517 1.607-2.915c.111-.396.627-2.445.627-2.445c.311.589 1.213 1.108 2.175 1.108c2.863 0 4.804-2.608 4.804-6.103c-.003-2.64-2.24-5.1-5.64-5.1"/>
+                            </svg>
                         </a></li>
                     </ul>
                 </div>
