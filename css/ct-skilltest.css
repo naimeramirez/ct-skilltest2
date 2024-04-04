@@ -1,5 +1,6 @@
 :root {
     --primary: #ff6200;
+    --secondary: #525252;
 }
 
 * {
@@ -78,7 +79,7 @@ ul {
     max-width: 1200px;
     display: flex;
     justify-content: space-between;
-    padding: 55px 0;
+    padding: 25px 0;
     font-family: 'bebas', sans-serif;
 }
 
@@ -87,7 +88,7 @@ ul {
 }
 
 .logo-your {
-    color: black;
+    color: var(--secondary);
 }
 
 .logo-logo {
@@ -102,6 +103,7 @@ ul {
 }
 
 .nav-link {
+    color: var(--secondary);
     padding: 0 10px;
 }
 
@@ -110,3 +112,98 @@ ul {
 }
 
 /*content*/
+.content {
+   font-family: 'ubuntu', sans-serif;
+}
+
+.content-tabs {
+    font-size: 19px;
+    color: #adadad;
+    display: flex;
+}
+
+.content-item {
+    padding-right: 5px;
+}
+
+.active {
+    color: var(--secondary);
+}
+
+.content-title {
+    color: var(--primary);
+    font-size: 36px;
+}
+
+.tab-content {
+    /*display: none;*/
+}
+
+/*contact form*/
+.contact-info {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: calc(60% - 50px) calc(40% - 50px);
+    gap:100px;
+}
+
+.contact-title {
+    color: var(--primary);
+    font-size: 31px;
+    border-bottom: var(--secondary) 10px solid;
+    padding: 10px 0;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+    margin: 10px auto;
+}
+
+#formMessage {
+    grid-column: 1 / -1;
+}
+
+#formName {
+    grid-column: 1 / -1;
+}
+
+.form-input {
+    border: 1px solid #adadad;
+    padding: 10px;
+    font-size: 19px;
+    background-color: #f6f6f6;
+}
+
+#contactSubmit {
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    width: 150px;
+    height: 50px;
+    font-size: 18px;
+}
+
+
+/*reach us*/
+.reach-us {
+    font-size: 19px;
+}
+
+.company-name {
+    padding: 5px 0;
+    font-size: 22px;
+}
+
+.social-links {
+    display: flex;
+    font-size: 30px;
+}
+
+.social-links li {
+    padding-right: 10px;
+    padding-top: 50px;
+}
+
+
