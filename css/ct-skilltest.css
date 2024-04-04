@@ -95,25 +95,65 @@ ul {
     color: var(--primary);
 }
 
+/*dropdowns*/
 .nav-links {
     display: flex;
     justify-content: space-evenly;
     font-size: 18px;
-    margin: auto 0;
+    margin: auto 10px;
 }
 
 .nav-link {
     color: var(--secondary);
-    padding: 0 10px;
+    position: relative;
+    padding: 20px;
+}
+
+.link-active {
+    border-bottom: var(--primary) solid 5px;
+    box-sizing: border-box;
+    margin-bottom: -5px;
+}
+
+.nav-link a {
+    display: flex;
+    justify-content: center;
 }
 
 .dropdown-menu {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 130px;
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.sub-drop-menu {
+    display: none;
+    position: absolute;
+    top: 10%;
+    left: 100%;
+    width: 130px;
+    padding: 10px 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-item {
+    padding: 10px 0;
 }
 
 /*content*/
 .content {
-   font-family: 'ubuntu', sans-serif;
+    font-family: 'ubuntu', sans-serif;
 }
 
 .content-tabs {
@@ -135,8 +175,9 @@ ul {
     font-size: 36px;
 }
 
-.content-info p {
+.content-paragraph {
     padding: 5px 0;
+    color: var(--secondary);
 }
 
 .content-info {
@@ -147,7 +188,7 @@ ul {
     display: none;
 }
 
-.tab-pane.active{
+.tab-pane.active {
     display: block;
 }
 
@@ -156,14 +197,14 @@ ul {
     margin: 0 auto;
     display: grid;
     grid-template-columns: calc(60% - 50px) calc(40% - 50px);
-    gap:100px;
+    gap: 100px;
 }
 
 .contact-title {
     color: var(--primary);
     font-size: 31px;
     border-bottom: var(--secondary) 10px solid;
-    padding: 10px 0;
+    margin: 20px 0;
 }
 
 .contact-form {
@@ -195,12 +236,14 @@ ul {
     width: 150px;
     height: 50px;
     font-size: 18px;
+    margin-top: 20px;
 }
 
 
 /*reach us*/
 .reach-us {
     font-size: 19px;
+    color: var(--secondary);
 }
 
 .company-name {
