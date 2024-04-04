@@ -154,6 +154,7 @@ ul {
 /*content*/
 .content {
     font-family: 'ubuntu', sans-serif;
+    margin-top: 20px;
 }
 
 .content-tabs {
@@ -237,6 +238,7 @@ ul {
     height: 50px;
     font-size: 18px;
     margin-top: 20px;
+    cursor: pointer;
 }
 
 
